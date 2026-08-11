@@ -42,9 +42,12 @@ The example local branches—`mkg` for the Muskegon area, `det` for the Detroit 
 
 ## How repeater tags and channel scopes work
 
-Repeater tags and companion channel scopes do different jobs.
+Repeater regions/tags and companion channel scopes do different jobs:
 
-For example, **GRR Repeater #1** would normally carry the full set of regions that it serves:
+- **Repeater regions/tags answer:** “What scoped traffic will this repeater pass on?”
+- **A companion scope answers:** “How far should this outgoing message travel?”
+
+For example, a repeater installed on a home in the Grand Rapids area would normally carry the full set of regions that it serves:
 
 ```text
 midwest
@@ -55,7 +58,17 @@ grr
 
 These are four separate forwarding permissions. The hierarchy helps people organize and understand them, but MeshCore does not automatically inherit them. The repeater must be explicitly configured to carry each region. It can then forward a message scoped to any one of those four regions.
 
-On a companion, the scope selected for the Public channel applies to messages that companion **sends** on Public. One message uses one scope:
+During a transition to scoped traffic, the repeater may also continue allowing `*`, the null region, so that it forwards legacy unscoped messages. Merely adding named regions does not disable unscoped flooding.
+
+On a companion, each group channel can have its own outgoing scope. A practical setup could be:
+
+| Channel | Outgoing scope | Intended reach |
+| --- | --- | --- |
+| `#michigan` | `mi` | Statewide Michigan conversation |
+| `#wmi` | `mi-west` | Conversation across West Michigan |
+| `#grr` | `grr` | Conversation within the greater Grand Rapids area |
+
+Channel names and scopes are independent. Naming a channel `#grr` does not scope it automatically; its region scope must be explicitly set to `grr`. Each outgoing message uses the one scope selected for its channel:
 
 - Choose `grr` for everyday conversation intended for the Grand Rapids area.
 - Choose `mi-west` when the conversation is useful across West Michigan.
