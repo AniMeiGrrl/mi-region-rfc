@@ -14,6 +14,22 @@ The design is intended to scale as communities and coverage grow. It does not as
 
 This draft defines an initial Michigan hierarchy and illustrates how neighboring states could fit beneath `midwest`. The example state branches do not define or govern those states' regional structures.
 
+## Quick glossary
+
+| Term | Plain-language meaning |
+| --- | --- |
+| **Companion** | The user-facing MeshCore node and app used to send and receive messages. |
+| **Repeater** | A node that hears traffic over RF and may transmit it again so it can travel farther. |
+| **Region** | An agreed name for an RF propagation and community domain, such as `mi-west` or `grr`. |
+| **Region name / tag** | The exact text used to identify a region. This RFC sometimes says “tag” informally; MeshCore generally calls it a region name. |
+| **Repeater regions / carried regions** | The region names a repeater is explicitly configured and permitted to forward. They answer: “What scoped traffic will this repeater pass on?” |
+| **Scope / region scope** | The one region selected for an outgoing message. It answers: “How far should this message travel?” |
+| **Channel** | A group conversation such as `#grr`. Its name and encryption settings are separate from its region scope. A channel name does not set its scope automatically. |
+| **Hierarchy** | The broad-to-local organization of region names. It documents their relationship but does not make MeshCore inherit forwarding permissions. |
+| **Full ancestry** | Every applicable region from broadest to most local, configured separately on a repeater—for example `midwest`, `mi`, `mi-west`, and `grr`. |
+| **Scoped traffic** | Traffic sent with a named region scope. Only repeaters carrying that exact region can continue forwarding it. |
+| **Unscoped traffic / `*`** | Legacy traffic sent without a named scope. `*` is the null-region setting that controls whether a repeater forwards it. |
+
 ## Initial hierarchy
 
 ```text
