@@ -40,6 +40,34 @@ Michigan subregion names use a parent-first `mi-` prefix so they remain recogniz
 
 The example local branches—`mkg` for the Muskegon area, `det` for the Detroit area, `tvc` for the Traverse City area, and `mqt` for the Marquette area—illustrate how city or metro scopes could nest beneath Michigan subregions. They do not establish final local definitions or hard geographic boundaries.
 
+## How repeater tags and channel scopes work
+
+Repeater tags and companion channel scopes do different jobs.
+
+For example, **GRR Repeater #1** would normally carry the full set of regions that it serves:
+
+```text
+midwest
+mi
+mi-west
+grr
+```
+
+These are four separate forwarding permissions. The hierarchy helps people organize and understand them, but MeshCore does not automatically inherit them. The repeater must be explicitly configured to carry each region. It can then forward a message scoped to any one of those four regions.
+
+On a companion, the scope selected for the Public channel applies to messages that companion **sends** on Public. One message uses one scope:
+
+- Choose `grr` for everyday conversation intended for the Grand Rapids area.
+- Choose `mi-west` when the conversation is useful across West Michigan.
+- Choose `mi` for statewide traffic.
+- Choose `midwest` only when the traffic is genuinely useful across the broader interstate region.
+
+Selecting `grr` for Public does not limit the companion to receiving only `grr` messages. The companion can still receive Public messages using `grr`, `mi-west`, `mi`, `midwest`, or another scope when those messages reach it through repeaters configured to forward them. Unscoped legacy traffic may also continue to propagate where repeaters allow it.
+
+The practical rule is simple: repeaters carry the scopes they are willing to forward; companions choose how far each outgoing conversation should travel. Scope local conversation narrowly rather than using the widest available region by default.
+
+This behavior follows the [Pacific Northwest MeshCore Region Strategy](https://gessaman.com/meshcore/regions/#choosing-a-channel-scope) and the [MeshCore region-filtering documentation](https://blog.meshcore.io/2026/01/20/region-filtering).
+
 ## Region meanings
 
 ### `midwest`
