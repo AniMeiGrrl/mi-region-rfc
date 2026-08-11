@@ -12,9 +12,16 @@ The draft treats regions as RF propagation and community domains, not political 
 
 ```text
 midwest
-└── mi
-    └── wmi
-        └── grr
+├── mi
+│   ├── mi-west
+│   │   └── grr
+│   ├── mi-central
+│   ├── mi-east
+│   ├── mi-north
+│   └── mi-upper
+├── il (example)
+├── wi (example)
+└── in (example)
 ```
 
-Statewide subregions beyond this initial path remain unresolved and are intentionally not defined yet.
+The neighboring-state branches illustrate how the model can scale; this Michigan RFC does not define or govern their regional structures.
