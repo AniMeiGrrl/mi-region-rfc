@@ -16,6 +16,7 @@ midwest
 │   ├── mi-west
 │   │   └── grr
 │   ├── mi-central
+│   │   └── thumb
 │   ├── mi-east
 │   ├── mi-north
 │   └── mi-upper
