@@ -20,19 +20,25 @@ This draft defines an initial Michigan hierarchy and illustrates how neighboring
 midwest
 ├── mi
 │   ├── mi-west
-│   │   └── grr
+│   │   ├── grr
+│   │   └── mkg (example)
 │   ├── mi-central
-│   │   └── thumb
+│   │   ├── thumb
 │   │   └── midstate
 │   ├── mi-east
+│   │   └── det (example)
 │   ├── mi-north
+│   │   └── tvc (example)
 │   └── mi-upper
+│       └── mqt (example)
 ├── il (example)
 ├── wi (example)
 └── in (example)
 ```
 
 Michigan subregion names use a parent-first `mi-` prefix so they remain recognizable, group together, and avoid collisions with similarly named regions elsewhere. In this draft, `mi-north` refers to the northern Lower Peninsula and `mi-upper` refers to the Upper Peninsula.
+
+The example local branches—`mkg` for the Muskegon area, `det` for the Detroit area, `tvc` for the Traverse City area, and `mqt` for the Marquette area—illustrate how city or metro scopes could nest beneath Michigan subregions. They do not establish final local definitions or hard geographic boundaries.
 
 ## Region meanings
 

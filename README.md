@@ -14,16 +14,20 @@ The draft treats regions as RF propagation and community domains, not political 
 midwest
 ├── mi
 │   ├── mi-west
-│   │   └── grr
+│   │   ├── grr
+│   │   └── mkg (example)
 │   ├── mi-central
-│   │   └── thumb
+│   │   ├── thumb
 │   │   └── midstate
 │   ├── mi-east
+│   │   └── det (example)
 │   ├── mi-north
+│   │   └── tvc (example)
 │   └── mi-upper
+│       └── mqt (example)
 ├── il (example)
 ├── wi (example)
 └── in (example)
 ```
 
-The neighboring-state branches illustrate how the model can scale; this Michigan RFC does not define or govern their regional structures.
+The city and neighboring-state examples illustrate how the model can scale; they do not establish hard boundaries or govern another community's regional structure.
