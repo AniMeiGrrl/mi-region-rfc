@@ -47,9 +47,13 @@ Its practical scope should follow useful RF propagation, coverage, and relations
 
 The region is intended for traffic useful across multiple West Michigan communities that is too broad for a local region such as `grr` but does not need statewide `mi` scope. It does not grant any participant ownership of West Michigan or authority over another community's traffic.
 
-### Initial local region
+### `grr`
 
-- `grr` — the Grand Rapids-area local propagation and community domain.
+The `grr` region is the local coordination domain centered on the Grand Rapids metropolitan area, including nearby suburbs and communities connected to the metro area.
+
+Its edges are intentionally flexible. Participation should follow useful local RF propagation, coverage, and community relationships rather than a fixed radius or a hard list of cities, townships, or counties. A nearby community may reasonably use `grr` when it shares local traffic and practical connectivity with the Grand Rapids area.
+
+The region is intended for traffic useful within the greater Grand Rapids area that does not need the broader West Michigan scope of `wmi`. It does not grant Grand Rapids or any participant ownership of the surrounding area or authority over another community's traffic.
 
 These descriptions communicate intended scope; they do not establish political or rigid RF borders.
 
