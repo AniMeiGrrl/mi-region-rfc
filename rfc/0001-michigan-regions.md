@@ -39,9 +39,16 @@ The `mi` region uses Michigan's recognizable geographic boundary to provide a pr
 
 The region is intended for traffic useful across Michigan that does not need the broader interstate scope of `midwest`. It does not assign ownership of Michigan traffic or authority over communities within the state.
 
-### Initial subregions
+### `wmi`
 
-- `wmi` — the West Michigan propagation and community domain.
+The `wmi` region is the West Michigan coordination domain. Like `midwest`, the name describes a commonly understood geographic and community area with intentionally flexible edges; `wmi` applies the same idea at a more local scale within Michigan.
+
+Its practical scope should follow useful RF propagation, coverage, and relationships among West Michigan communities rather than fixed county or municipal boundaries. Communities near an edge may reasonably connect through the region when propagation and shared interests make that useful.
+
+The region is intended for traffic useful across multiple West Michigan communities that is too broad for a local region such as `grr` but does not need statewide `mi` scope. It does not grant any participant ownership of West Michigan or authority over another community's traffic.
+
+### Initial local region
+
 - `grr` — the Grand Rapids-area local propagation and community domain.
 
 These descriptions communicate intended scope; they do not establish political or rigid RF borders.
