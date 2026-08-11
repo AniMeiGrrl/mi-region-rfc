@@ -25,12 +25,26 @@ midwest
 
 ## Region meanings
 
-- `midwest` — the broader interstate Midwest domain.
-- `mi` — the statewide Michigan domain.
+### `midwest`
+
+The `midwest` region is the broad interstate coordination domain containing Michigan and neighboring or nearby Midwestern MeshCore communities.
+
+The commonly recognized [U.S. Census Midwest region](https://www.census.gov/programs-surveys/popest/guidance-geographies/terms-and-definitions.html) provides a geographic reference for this name. However, `midwest` is an RF propagation and community domain, not a strict adoption of Census boundaries. Participation should follow useful interstate connectivity, propagation relationships, and coordination between communities.
+
+The region is intended for traffic that is genuinely useful across state or major regional boundaries. It is not a default destination for local or statewide traffic, nor does it grant any participant authority over traffic within another region.
+
+### `mi`
+
+The `mi` region uses Michigan's recognizable geographic boundary to provide a practical scope for statewide coordination. The state boundary is a reference for organizing traffic, not a claim that RF propagation or communities stop at the border.
+
+The region is intended for traffic useful across Michigan that does not need the broader interstate scope of `midwest`. It does not assign ownership of Michigan traffic or authority over communities within the state.
+
+### Initial subregions
+
 - `wmi` — the West Michigan propagation and community domain.
 - `grr` — the Grand Rapids-area local propagation and community domain.
 
-These descriptions communicate intended scope; they do not define political borders.
+These descriptions communicate intended scope; they do not establish political or rigid RF borders.
 
 ## Design principles
 
