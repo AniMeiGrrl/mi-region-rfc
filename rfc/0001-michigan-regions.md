@@ -10,6 +10,8 @@ Create a shared region-scoping standard for Michigan that reduces unnecessary RF
 
 This RFC establishes an initial shared hierarchy for naming Michigan MeshCore regions. Regions represent practical RF propagation and community domains rather than political boundaries. The hierarchy is intended to support useful communication at several geographic scales while avoiding traffic where it provides little value.
 
+The design is intended to scale as communities and coverage grow. It does not assign ownership of a region, grant authority over a region's traffic, or provide a means for one community to take control of another. Region scopes are a shared coordination mechanism for limiting extraneous flooding while preserving useful connectivity and local autonomy.
+
 This draft defines only the agreed initial path. Other statewide subregions are intentionally left unresolved.
 
 ## Initial hierarchy
@@ -35,6 +37,8 @@ These descriptions communicate intended scope; they do not define political bord
 - Scope regions around useful RF propagation and real communities of communication.
 - Preserve paths for local, regional, statewide, and interstate connectivity.
 - Reduce unnecessary RF flooding by avoiding scopes broader than the communication need.
+- Preserve local autonomy; participation in the hierarchy does not imply ownership or control of a region or its traffic.
+- Allow the hierarchy to scale as propagation patterns and communities evolve.
 - Use a clear hierarchy so broader and narrower domains remain understandable.
 - Add regions only when their practical purpose and community are understood.
 - Keep unsettled boundaries and statewide subdivisions open until there is agreement.
